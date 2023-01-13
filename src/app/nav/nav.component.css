@@ -1,0 +1,28 @@
+.navbar{
+    /* color: brown; */
+    background-color:rgb(62, 42, 61);
+    /* text-decoration-color: blue; */
+    /* background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.navbar-brand{
+    /* font-size: 100rem;  */
+    font-family: sans-serif;
+    font-size: large;
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); /* you can change the colors based on your preference */
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: wave 2000ms ease alternate infinite;
+    transition: all 0.4s ease;
+}
+@keyframes wave {
+    /* 0% {
+      background-position: 0 0;
+    } */
+    100% {
+      background-position: 50vw 10px;
+    }
+  }

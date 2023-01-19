@@ -1,0 +1,28 @@
+.card-wrapper{
+    margin: 20px;
+}
+
+.mat-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card{
+    margin: 30px;
+    margin-left: 16rem !important;
+    /* height: 250px; */
+    max-width: 1000px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.row{
+    height: 300px;
+    margin-left: -12px;
+}
+.col-md-4{
+    height: 300px;
+}
+
+.img-fluid{
+    height: 300px;
+}

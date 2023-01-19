@@ -1,0 +1,105 @@
+<ngx-slick-carousel class="carousel" 
+  #slickModal="slick-carousel" 
+  [config]="slideConfig" 
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+<div ngxSlickItem *ngFor="let slide of slides" class="slide">
+<img src="{{ slide.img }}" alt="" width="100%">
+</div>
+<div class="centered">Centered</div>
+</ngx-slick-carousel>
+<!-- <button (click)="addSlide()">Add</button>
+<button (click)="removeSlide()">Remove</button>
+<button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+<button (click)="slickModal.unslick()">unslick</button> -->
+<div class="card-wrapper">
+  <div class="row">
+<div class="col-4">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <img
+        src="./assets/images/carlogo.jpg"
+        mat-card-avatar />
+      <mat-card-title color="red">ShopCar</mat-card-title>
+      <!-- <mat-card-subtitle>
+        Learn Web Development with Easy Tutorials
+      </mat-card-subtitle> -->
+    </mat-card-header>
+    <img mat-card-image style="width: 150px; height: 200px; margin-left: 120px;" src="./assets/images/car10.jpg" alt="Car">
+    <mat-card-content>
+      <p>
+        Car Rental in Mangalore - Now hire a car in Mangalore became easier with Revv, best car rental service provider in India.Min 21 years old, have valid original government ID and a valid driving licence for “Light Motor Vehicles”, which is min. 1 year old at the time of starting the trip.
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="accent" routerLink="/cars">More</button>
+      <!-- <button mat-raised-button color="primary">SHARE</button> -->
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="col-4">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <img
+        src="./assets/images/cl1.jpg"
+        mat-card-avatar />
+      <mat-card-title color="red">ShopCar</mat-card-title>
+      <!-- <mat-card-subtitle>
+        Learn Web Development with Easy Tutorials
+      </mat-card-subtitle> -->
+    </mat-card-header>
+    <img mat-card-image style="width: 150px; height: 200px; margin-left: 120px;" src="./assets/images/car11.jpg" alt="Car">
+    <mat-card-content>
+      <p>
+        Car Rental in Mangalore - Now hire a car in Mangalore became easier with Revv, best car rental service provider in India.Min 21 years old, have valid original government ID and a valid driving licence for “Light Motor Vehicles”, which is min. 1 year old at the time of starting the trip.
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="accent" routerLink="/cars">More</button>
+      <!-- <button mat-raised-button color="primary">SHARE</button> -->
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="col-4">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <img
+        src="./assets/images/carlogo.jpg"
+        mat-card-avatar />
+      <mat-card-title color="red">ShopCar</mat-card-title>
+      <!-- <mat-card-subtitle>
+        Learn Web Development with Easy Tutorials
+      </mat-card-subtitle> -->
+    </mat-card-header>
+    <img mat-card-image style="width: 150px; height: 200px; margin-left: 120px;" src="./assets/images/car10.jpg" alt="Car">
+    <mat-card-content>
+      <p>
+        Car Rental in Mangalore - Now hire a car in Mangalore became easier with Revv, best car rental service provider in India.Min 21 years old, have valid original government ID and a valid driving licence for “Light Motor Vehicles”, which is min. 1 year old at the time of starting the trip.
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="accent" routerLink="/cars">More</button>
+      <!-- <button mat-raised-button color="primary">SHARE</button> -->
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+</div>
+</div>
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    ©  2023
+    <a class="text-dark" href="https://carrental.com/">carental.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>

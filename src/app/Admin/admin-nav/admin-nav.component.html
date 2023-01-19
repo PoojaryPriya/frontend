@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" routerLink="/home" style="font-size: 25px;font-family: fantasy;">Car Rental System</a>
+      <a class="navbar-brand text-white" href="#" style="font-size: 25px;font-family: fantasy;">Car Rental System</a>
       <div
         class="collapse navbar-collapse"
         id="navbarSupportedContent"
-        mdbCollapse *ngIf="!isAuthenticated()">
+        mdbCollapse >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link text-white" aria-current="page" routerLink="/cars" routerLinkActive="true">Cars</a>
@@ -25,46 +25,30 @@
             placeholder="search car"
             aria-label="Search"
           />
-          <button class="btn btn-outline-primary" type="button" >
+          <button class="btn btn-outline-primary" type="button">
             Search
           </button>
           
         </form>
       </div>
 
-      <div class="dropdown" *ngIf="isAuthenticated() as user" dropdown>
-        <a class="dropdown-toggle text-light text-decoration-none" dropdownToggle>Welcome user</a>
-        <div class="dropdown-menu mt-3" *dropdownMenu>
-            <a class="dropdown-item" routerLink="/member/edit">Edit Profile</a>
-            <a class="dropdown-item" (click)="logout()">Logout</a>
-        </div>
-    </div>
-
-      <!-- <div *ngIf="!isAuthenticated()" class="logreg me-4" >
-        <button  routerLink='/login'
+      <div class="logreg me-4" >
+        <!-- <button  routerLink='/login'
         style="background-color: rgb(7, 7, 7); color: white; padding: 7px 10px; margin-left:5px !important; margin-right:5px !important;" 
         >
-          Login </button>&nbsp;&nbsp; 
-        <button routerLink='/register' 
+          Login </button>&nbsp;&nbsp;  -->
+        <!-- <button routerLink='/register' 
         style="background-color: rgb(62, 42, 61); color: white; padding: 7px 10px; margin-right:5px !important">
-          <span class="register">Register</span></button> 
-          <div class="dropdown" *ngIf="isAdmin()" dropdown>
+          <span class="register">Register</span></button> -->
+          <div class="dropdown"  dropdown>
             <a class="dropdown-toggle text-light text-decoration-none" dropdownToggle>Welcome user</a>
             <div class="dropdown-menu mt-3" *dropdownMenu>
                 <a class="dropdown-item" routerLink="/member/edit">Edit Profile</a>
-                <a class="dropdown-item" (click)="logout()">Logout</a>
+                <a class="dropdown-item" >Logout</a>
             </div>
         </div>
-      </div> -->
-    </div>
-
-    <!-- <div *ngIf="loginMode" class="container">
-      <div class="row justify-content-center">
-          <div class="col-4">
-            <app-login></app-login>
-          </div>
       </div>
-  </div> -->
+    </div>
   </nav>
 
 

@@ -1,0 +1,44 @@
+/* .btn{
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.modal-body .btn{
+    
+    margin-top: 100px;
+}
+
+.modal-content{
+    height: 500px;
+    width: 700px;
+} */
+
+.gradient-custom-3 {
+    background-color: #f5f2f3;
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    /* background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5)) */
+}
+
+.gradient-custom-4 {
+
+    background: #f4f7f5;
+    background: -webkit-linear-gradient(to right, rgb(246, 249, 247), rgba(143, 211, 244, 1));
+    background: linear-gradient(to right, rgb(248, 250, 249), rgba(143, 211, 244, 1))
+}
+
+.bg-image
+{
+    background-color: #ffffff;
+}
+
+.mask{
+    margin: auto;
+}
+.card{
+    margin: 30px;
+    width: 600px;
+}
+.card-body{
+    height: 700px;
+}

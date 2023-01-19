@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+.slick-slider {
+  height: 400px;
+    width: 88%;
+    margin: 50px;
+    background: rgb(14, 13, 13);
+  }
+  
+body .slick-prev, 
+body .slick-next {
+    height: 55px;
+    width: 40px;
+    /* background: grey !important; */
+    z-index: 100;
+}
+body .slick-prev{
+   left:-4px;
+}
+body .slick-next{
+    right:-5px;
+}
+.slick-slide{
+  /* width:533px; */
+  height:400px !important;
+}
+.slick-initialized .slick-slide{
+  width:533px ;
+}
+.slick-slide img{ 
+  height:100% !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

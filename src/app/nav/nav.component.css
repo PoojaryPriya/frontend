@@ -26,3 +26,12 @@
       background-position: 50vw 10px;
     }
   }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+/* button{
+    border-radius: 10px !important;
+    border-color: rgb(62,42,61);
+  } */
